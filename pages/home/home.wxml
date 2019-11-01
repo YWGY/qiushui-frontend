@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="homepage">
+   <text>pages/home/home.wxml</text>
+   <button>我的页面</button>
+  </view>
+ 
+  <block></block>
+</view>
