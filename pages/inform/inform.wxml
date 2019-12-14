@@ -1,0 +1,31 @@
+<view class='inform-container'>
+  <!-- 引入header -->
+  <include src="../../components/header/header.wxml" />
+  <view class='inform-content'>
+    <scroll-view class="inform-scroll" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view class="card b-shadow">
+        <view class='nearCard-fr'>
+          <h2 class="inform-h2"space="emsp">客栈简介</h2>
+          <text class="inform-text" space="emsp">\n  阳朔秋水民宿位于兴坪新街，周围餐饮、娱乐等生活配套齐全，出行便利。\n  秋水的宅院由保存完整的古民居改造而成，可感受到浓郁的兴坪文化底蕴。“一舍一屋一洞天，保留本真，融于当地，与村落共生”，客房装饰运用大量木材，房内均配备智能马桶和品牌洗浴用品。\n  此外，民宿还提供早餐，茶饮，小吃，并可根据客人的要求为客人提供旅游行程的建议。\n  来到秋水，静静的躺下来，闭上眼睛，清理内心的冗余，清理脑子里的杂志，唯有自己的心语，一如屋后潺潺有声的漓江水，悠扬而婉转。</text>
+        </view>
+      </view>
+      <view class="card b-shadow">
+        <view class='nearCard-fr'>
+          <h2 class="inform-h2">联系方式</h2>
+          <text class="inform-text" space="emsp">\n  电话 15978051548</text>
+        </view>
+      </view>
+    </scroll-view>
+    <map
+      id="myMap"
+      class="my-map"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+  <!-- 引入footer-->
+  <include src='../../components/footer/footer.wxml' />
+</view>

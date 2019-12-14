@@ -1,0 +1,78 @@
+/**
+ * 日历组件
+ */
+
+.calendar {
+    display: block;
+    margin: 0rpx;
+    font-size: 28rpx;
+}
+
+/**
+ * 日历主标题
+ */
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    margin: 0rpx 20rpx 20rpx 20rpx;
+    text-align: center;
+    font-weight: bold;
+}
+
+/**
+ * 日历周标题
+ */
+
+.calendar-weeks {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+/**
+ * 日历周标题单个项目
+ */
+
+.calendar-weekday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;    
+    text-align: center;
+}
+
+/**
+ * 日历日期行
+ */
+
+.calendar-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+/**
+ * 日历单个日期项
+ */
+
+.calendar-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;    
+    text-align: center;    
+}
+
+.cell-rounded {
+    border-radius: 50%;
+}
+
+.calendar-lunar-day {    
+    font-size: 20rpx;
+}

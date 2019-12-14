@@ -1,0 +1,28 @@
+.header {
+  padding: 0px 5px 30px 5px;
+  position: relative;
+  background:#f6f6f6;
+  border-bottom-style: solid;
+  border-color: #ADAAAA;
+  border-width: 0.1px;
+}
+
+.header-img {
+  padding: 0 0 15px 0;
+}
+
+.swiper-img {
+  border-radius: 2%; 
+}
+
+.inform-image {
+  width: 100%;
+}
+
+.header-nav {
+  float: left;
+  background: #f6f6f6;
+  width: 50%;
+  text-align: center;
+}
+ 

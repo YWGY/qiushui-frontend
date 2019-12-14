@@ -1,13 +1,16 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/detail/order/order",
+    "pages/detail/personal/personal",
+    "pages/login/login",
     "pages/logs/logs",
-    "pages/home/home"
+    "pages/inform/inform"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "阳朔秋水民宿",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

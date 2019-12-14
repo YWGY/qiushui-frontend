@@ -1,0 +1,19 @@
+<view class='header'>
+  <view class='header-img'>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{duration}}' current='{{swiperCurrent}}'>
+      <block wx:for='{{imgUrls}}' wx:key='*this'>
+        <swiper-item class='swiper-img'>
+          <image src='{{item}}' class='inform-image' bindtap='swipclick' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='header-title'>
+    <navigator class='header-nav' url='/pages/index/index?=title=index' hover-class='navigator-hover'>
+      {{nbTitle1}}
+    </navigator>
+    <navigator class='header-nav' url='/pages/inform/inform?=title=inform' hover-class='navigator-hover'>
+      {{nbTitle2}}
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+.footer {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:auto auto;
+  margin-top: auto;
+  border-top-style: solid;
+  border-color: #ADAAAA;
+  border-width: 0.1px;
+  background: #f6f6f6;
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+ 
+@font-face {
+  font-family: 'iconfont';  /* project id 1522305 */
+  src: url('//at.alicdn.com/t/font_1522305_sgk3e2bhabl.eot');
+  src: url('//at.alicdn.com/t/font_1522305_sgk3e2bhabl.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1522305_sgk3e2bhabl.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1522305_sgk3e2bhabl.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1522305_sgk3e2bhabl.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1522305_sgk3e2bhabl.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ren2:before {
+  content: "\e643";
+}
+
+.icon-kezhangongyu:before {
+  content: "\e8e9";
+}
