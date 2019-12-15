@@ -3,7 +3,7 @@
     <view><icon class="iconfont icon-kezhangongyu" /></view>
     <view>{{footerTitle1}}</view>
   </navigator>
-  <navigator class='footer-rightnav' url='/pages/detail/personal/personal?=title=personal' hover-class='navigator-hover'>
+  <navigator class='footer-rightnav' url='/pages/personal/personal?=title=personal' hover-class='navigator-hover'>
     <view><icon class="iconfont icon-ren2" /></view>
     <view>{{footerTitle2}}</view>
   </navigator>

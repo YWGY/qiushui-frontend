@@ -30,3 +30,15 @@
   font-size: 10px;
 }
 
+.index-check {
+   display: block;
+   background-color: #f6f6f6;
+}
+
+.index-checklist {
+  padding: 20px;
+}
+
+.seacrhbtn {
+  margin: 0 80px 0 80px;
+}

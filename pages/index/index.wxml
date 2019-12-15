@@ -2,75 +2,18 @@
   <!-- 引入header -->
   <include src="../../components/header/header.wxml" />
   <!-- 引入calendar -->
-  <view class='index-content'>
-    <!-- 入住时间 -->
-    <view class="search-rzsj">
-    <!-- 入住 -->
-      <view bindtap="selectRzsj" class="search-rzsj-item-sj">
-        <view class="search-rzsj-item-rz">入住</view>
-        <view class="search-rzsj-item-rq">
-          <image src="{{calendarImage}}" class="search-item-icon" />{{rzrq}}        </view>
-        <view class="search-rzsj-item-week">{{rzsjWeek}}{{rzsj}}</view>
-      </view>
-      <!-- 天数 -->
-      <view class="search-rzsj-item-ts">
-        <view class="search-rzsj-item-rz">|</view>
-        <view class="search-rzsj-item-rq">
-          {{rzts}}
-        </view>
-        <view class="search-rzsj-item-week">|</view>
-      </view>
-      <!-- 离店 -->
-      <view bindtap="selectRzsj" class="search-rzsj-item-sj">
-        <view class="search-rzsj-item-rz">离店</view>
-        <view class="search-rzsj-item-rq">
-          <image src="{{calendarImage}}" class="search-item-icon" />{{tfrq}}        </view>
-        <view class="search-rzsj-item-week">{{ldsjWeek}}{{tfsj}}</view>
-      </view>
+  <view class="index-checklist">
+    <view class="checkin">
+      <view bindtap="tapCheckin">入住时间：{{checkinTime}}</view>
     </view>
-    <!-- 时间开关 -->
-    <view class="time-switch" hidden="{{currentRzlx != 2}}">
-      <view class="time-switch-item">
-        <switch bindchange="switchChange" data-sjlx="1"/>
-        <view class="time-switch-item-desc">提前至20:00入住</view>
-      </view>
-      <view class="time-switch-item">
-        <switch bindchange="switchChange" data-sjlx="2"/>
-        <view class="time-switch-item-desc">延迟至12:00退房</view>
-      </view>
-      <view class="common-help" style="font-size:20rpx; margin-top:0px;">提前一小时入住许加收17元/延迟一小时退房需加收17元</view>
+    <view class="checkout">
+      <view bindtap="tapCheckout">离店时间：{{checkoutTime}}</view>
     </view>
-     <!-- 搜索按钮 -->
-    <button class="common-btn" bindtap="searchRoom">
-      <image src="{{searchBtnImage}}" class="search-item-icon" />搜索房间
-    </button>
+    <button class="seacrhbtn" type="default" loading="{{loading}}" bindtap="seacrhlist">搜索</button>
+    <view class="roomlist">
+      {{searchResult}}
+    </view>
   </view>
-  <!-- 房源展示 -->
-  <scroll-view class="tjfy-box" scroll-x>
-    <view class="tjfy-box-fy" wx:for="{{tjfyList}}" wx:key="unique" bindtap="navigateToFjxq" data-hotelid="{{item.id}}">
-      <!-- 房源图片 -->
-      <view class="tjfy-box-fy-image">
-        <image src="{{item.url}}" class="tjfy-box-fy-image" />
-      </view>
-      <!-- 房源描述 -->
-      <view class="tjfy-box-fy-fypf">
-        <view>{{item.star}}</view>
-        <view>评分：{{item.score}}</view>
-      </view>
-      <view class="tjfy-box-fy-fymc">{{item.name}}</view>
-      <view class="tjfy-box-fy-price">
-        <view style="font-size: 25rpx; color: red;"><money num="{{item.fjjg}}"></money></view>
-        <view style="font-size: 20rpx; margin-left: 5px;">起/晚</view>
-      </view>
-    </view>
-  </scroll-view>
-  <!-- 日历组件 -->
-  <modalView show="{{showModal}}" clickMaskClose="{{clickMaskClose}}">
-    <view class="calendar">
-      <view class="calendar-cancel" bindtap="unSelectRzsj">取消</view>
-      <calendar cell-size="45" weeks-type="cn" active-type="square" binddayClick="handleSelectDate" moreDays="true" show-more-days="true" startDate="{{startDate}}" endDate="{{endDate}}" />
-    </view>
-  </modalView>
   <!-- 引入footer-->
   <include src='../../components/footer/footer.wxml' />
 </view>

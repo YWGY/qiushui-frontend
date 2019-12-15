@@ -1,5 +1,5 @@
 //logs.js
-const util = require('../../utils/moment.js')
+const util = require('../../utils/util.js')
 
 Page({
   data: {

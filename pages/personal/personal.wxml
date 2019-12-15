@@ -1,0 +1,26 @@
+<view class='container'>
+  <!--登陆-->
+  <view class="personal-img">
+    <icon class="iconfont icon-travel-tourism_direc" />
+  </view>
+  <view class="personal-detail">
+    <view class="personal-section">
+      <view class="personal-title">手机</view>
+      <view class="personal-title input">
+        <input bindinput="getPhoneValue" value="{{phone}}" placeholder="请输入手机号" />
+      </view>
+      <view class="personal-title">验证码</view>
+      <view class="personal-title input">
+        <input bindinput="getCodeValue" placeholder="请输入验证码" bindinput="getCodeValue" value="{{code}}" />
+      </view>
+    </view>
+    <view class="personal-button"> 
+      <button class="codeBtn" bindtap="getVerificationCode" disabled="{{disable}}">
+        {{codename}}
+      </button>
+      <button class="personal-button detail" bindtap="loginBtn">登陆</button>
+    </view>
+  </view>
+  <!-- 引入footer-->
+  <include src='../../components/footer/footer.wxml' />
+</view>

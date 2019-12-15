@@ -1,0 +1,22 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YWGY/qiushui-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YWGY/qiushui-frontend/issues"
+  },
+  "homepage": "https://github.com/YWGY/qiushui-frontend#readme",
+  "description": "",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
