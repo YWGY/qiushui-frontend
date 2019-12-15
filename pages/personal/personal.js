@@ -66,7 +66,6 @@ Page({
                 codename: '重新发送',
                 disabled: false
               })
-
             } else {
               _this.setData({
                 codename: num + "s"

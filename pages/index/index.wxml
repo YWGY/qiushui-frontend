@@ -3,11 +3,14 @@
   <include src="../../components/header/header.wxml" />
   <!-- 引入calendar -->
   <view class="index-checklist">
-    <view class="checkin">
-      <view bindtap="tapCheckin">入住时间：{{checkinTime}}</view>
-    </view>
-    <view class="checkout">
-      <view bindtap="tapCheckout">离店时间：{{checkoutTime}}</view>
+    <view class="index-calendar">
+      <!-- <view><calendar bindtap="tapCalendar"  /></view> -->
+      <view class="checkin">
+        <input bindtap="chooseTime" placeholder="请选择入住时间及离店时间">
+          <view>入住时间：{{checkinTime}}</view>
+          <view>离店时间：{{checkoutTime}}</view>
+        </input>
+      </view>
     </view>
     <button class="seacrhbtn" type="default" loading="{{loading}}" bindtap="seacrhlist">搜索</button>
     <view class="roomlist">
